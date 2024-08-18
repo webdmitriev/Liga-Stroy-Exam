@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		532B5AE02C71EF98008650CF /* BuySellRentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B5ADF2C71EF98008650CF /* BuySellRentCell.swift */; };
 		532B5AE22C723715008650CF /* HousesBlockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B5AE12C723715008650CF /* HousesBlockCell.swift */; };
-		532B5AE42C723C91008650CF /* BuySellRentCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B5AE32C723C91008650CF /* BuySellRentCollection.swift */; };
 		532B5AE72C723CE8008650CF /* BuySellRentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B5AE62C723CE8008650CF /* BuySellRentData.swift */; };
 		532B5AE92C723D06008650CF /* HousesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B5AE82C723D06008650CF /* HousesData.swift */; };
 		533C7DBB2C7128C7002B9EEB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C7DBA2C7128C7002B9EEB /* RegisterViewController.swift */; };
@@ -33,7 +32,6 @@
 /* Begin PBXFileReference section */
 		532B5ADF2C71EF98008650CF /* BuySellRentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuySellRentCell.swift; sourceTree = "<group>"; };
 		532B5AE12C723715008650CF /* HousesBlockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousesBlockCell.swift; sourceTree = "<group>"; };
-		532B5AE32C723C91008650CF /* BuySellRentCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuySellRentCollection.swift; sourceTree = "<group>"; };
 		532B5AE62C723CE8008650CF /* BuySellRentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuySellRentData.swift; sourceTree = "<group>"; };
 		532B5AE82C723D06008650CF /* HousesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousesData.swift; sourceTree = "<group>"; };
 		533C7DBA2C7128C7002B9EEB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -72,7 +70,6 @@
 			children = (
 				532B5ADF2C71EF98008650CF /* BuySellRentCell.swift */,
 				532B5AE12C723715008650CF /* HousesBlockCell.swift */,
-				532B5AE32C723C91008650CF /* BuySellRentCollection.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -268,7 +265,6 @@
 				533C7DC02C7139AA002B9EEB /* UITextField.ext.swift in Sources */,
 				53F248412C726F7F0055BA6F /* BuySellRent.swift in Sources */,
 				533C7DC42C714C66002B9EEB /* AuthViewController.swift in Sources */,
-				532B5AE42C723C91008650CF /* BuySellRentCollection.swift in Sources */,
 				533C7DBB2C7128C7002B9EEB /* RegisterViewController.swift in Sources */,
 				537365542C70A402004F1772 /* ServicesViewController.swift in Sources */,
 				537365522C70A3DD004F1772 /* FavoriteViewController.swift in Sources */,
