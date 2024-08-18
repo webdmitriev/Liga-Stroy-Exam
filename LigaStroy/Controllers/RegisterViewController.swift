@@ -80,6 +80,10 @@ class RegisterViewController: UIViewController {
         hStackPrivacyPolicy.addArrangedSubviews(checkboxPrivacyPolicy, textprivacyPolicy)
 
         hStack.addArrangedSubviews(hStackText, hStackBtn)
+        
+        // MARK: - Gesture's
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tapGestureForHideKeyBoard))
+        view.addGestureRecognizer(tapGesture)
     }
     
     // MARK: - Constraint
@@ -143,5 +147,12 @@ class RegisterViewController: UIViewController {
         let authVC = AuthViewController()
         authVC.delegate = self.delegate
         self.navigationController?.pushViewController(authVC, animated: true)
+    }
+    
+    // MARK: - Gesture's
+    @objc func tapGestureForHideKeyBoard() {
+        textFieldName.resignFirstResponder()
+        textFieldEmail.resignFirstResponder()
+        textFieldPassword.resignFirstResponder()
     }
 }
