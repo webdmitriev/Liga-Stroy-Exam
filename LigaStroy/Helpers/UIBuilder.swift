@@ -82,17 +82,4 @@ class UIBuilder {
     }
     
     
-    
-    //
-    func testFunc() -> UIView {
-        let view = UIView()
-        
-        //lazy var blockContent: UIView = self.addView(bgc: .white, brs: 15)
-        lazy var blockContentTitle: UILabel = self.addLabel(text: "Услуги", fontS: 24, fontW: .bold)
-        
-        view.addSubviews(blockContentTitle)
-        
-        return view
-    }
-    
 }
