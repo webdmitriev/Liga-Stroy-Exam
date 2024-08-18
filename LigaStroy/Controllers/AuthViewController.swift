@@ -52,6 +52,7 @@ class AuthViewController: UIViewController {
         
         setupUI()
         constraitionUI()
+        
     }
     
     
@@ -68,6 +69,10 @@ class AuthViewController: UIViewController {
         containerView.addSubviews(titleLabel, textFieldEmail, textFieldPassword, textFieldPasswordBtn, handlerBtn, hStack)
 
         hStack.addArrangedSubviews(hStackText, hStackBtn)
+        
+        // MARK: - Gesture's
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tapGestureForHideKeyBoard))
+        view.addGestureRecognizer(tapGesture)
     }
     
     // MARK: - Constraint
@@ -122,6 +127,11 @@ class AuthViewController: UIViewController {
         self.navigationController?.popToRootViewController(animated: true)
     }
     
+    // MARK: - Gesture's
+    @objc func tapGestureForHideKeyBoard() {
+        textFieldEmail.resignFirstResponder()
+        textFieldPassword.resignFirstResponder()
+    }
     
     
     // MARK: - Hide Nav Bar
