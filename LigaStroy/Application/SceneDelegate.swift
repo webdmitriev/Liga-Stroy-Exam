@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, SceneDelegateProtocol, 
     var window: UIWindow?
     
     func changeRootVC() {
-        window?.rootViewController = TabBarController()
+        window?.rootViewController = UINavigationController(rootViewController: TabBarController())
     }
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -27,7 +27,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, SceneDelegateProtocol, 
         registerVC.delegate = self
         
         self.window = UIWindow(windowScene: sceneWindow)
-        self.window?.rootViewController = UINavigationController(rootViewController: TabBarController())
+        self.window?.rootViewController = UINavigationController(rootViewController: registerVC)
         self.window?.makeKeyAndVisible()
     }
 
