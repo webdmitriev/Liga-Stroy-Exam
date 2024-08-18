@@ -19,6 +19,7 @@ class BuySellRent: UIView {
         $0.minimumLineSpacing = 8
         return $0
     }(UICollectionViewFlowLayout())
+
     private lazy var buySellRentCollection: UICollectionView = {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.heightAnchor.constraint(equalToConstant: 125).isActive = true
