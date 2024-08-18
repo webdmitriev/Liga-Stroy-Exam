@@ -47,9 +47,10 @@ class UIBuilder {
         field.heightAnchor.constraint(equalToConstant: 60).isActive = true
         field.addPaddingToTextField(top: 20, right: 20, left: 20, bottom: 20)
 
-        field.placeholder = placeholder
         field.font = .systemFont(ofSize: 16, weight: .regular)
         field.textColor = .appBlack
+        field.attributedPlaceholder = NSAttributedString(string: placeholder,attributes: [NSAttributedString.Key.foregroundColor: UIColor.appBlack])
+
         field.backgroundColor = .appGray
         field.layer.cornerRadius = 30
         
